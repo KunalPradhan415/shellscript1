@@ -53,7 +53,11 @@ function pullcode
 
 function turninpa
 {
-	echo "dont do this yet"
+	echo "submit pa "
+	read -p "what is your ieng6 account? Please enter in the example form johndoe@ieng6.ucsd.edu" val
+	ssh $val
+	read -p "What is your account password?" passwd
+	$passwd
 }
 
 read -p "Do you wish to get starter code (S) or turnin an assignment(T)?" val
